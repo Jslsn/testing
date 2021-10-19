@@ -4,6 +4,10 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 
 ENV LANG en_US.utf8
 
+RUN apt-get install software-properties-common
+
+RUN add-apt-repository ppa:deadsnakes/ppa
+
 RUN apt install python3.8
 
 RUN apt install git-all
