@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN apt-get update
 
-RUN apt install python3.8
+RUN echo y | apt install python3.8
 
 RUN apt install git-all
 
