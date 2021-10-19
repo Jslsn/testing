@@ -4,10 +4,6 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 
 ENV LANG en_US.utf8
 
-RUN apt-get install python3.8
-
-RUN apt-get install git-all
-
 RUN git clone https://github.com/Jslsn/testing.git
 
 RUN cd testing/msg/
