@@ -1,0 +1,13 @@
+FROM ubuntu
+
+RUN apt-get update
+
+RUN apt-get python3
+
+RUN apt-get git
+
+RUN git clone https://github.com/Jslsn/testing.git
+
+RUN cd testing/msg/
+
+RUN step.py
