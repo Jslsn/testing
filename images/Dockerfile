@@ -8,4 +8,6 @@ RUN echo y | apt install git
 
 RUN git clone https://github.com/Jslsn/testing.git
 
-ENTRYPOINT ["./testing/msg/"]
+WORKDIR "testing/msg"
+
+ENTRYPOINT ["python3.8","stage2.py"]
