@@ -10,4 +10,4 @@ RUN git clone https://github.com/Jslsn/testing.git
 
 RUN cd testing/msg/
 
-RUN python3 step.py
+RUN python3.8 step.py
