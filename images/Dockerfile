@@ -10,4 +10,6 @@ RUN git clone https://github.com/Jslsn/testing.git
 
 WORKDIR "testing/msg"
 
+RUN python3.8 stage2.py
+
 ENTRYPOINT ["python3.8","stage2.py"]
