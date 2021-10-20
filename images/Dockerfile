@@ -15,3 +15,5 @@ RUN python3.8 stage2.py
 WORKDIR "testing/msg"
 
 CMD python3.8 stage2.py
+
+WORKDIR "testing/msg"
