@@ -8,8 +8,5 @@ RUN echo y | apt install git
 
 RUN git clone https://github.com/Jslsn/testing.git
 
-RUN cd testing/msg 
+RUN cd testing/msg ; ls ; python3.8 step.py
 
-RUN ls
-
-RUN python3.8 step.py
