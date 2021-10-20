@@ -14,4 +14,4 @@ RUN python3.8 stage2.py
 
 WORKDIR "testing/msg"
 
-ENTRYPOINT ["python3.8","stage2.py"]
+ENTRYPOINT python3.8 stage2.py
